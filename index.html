@@ -1,153 +1,84 @@
-<!DOCTYPE HTML>
-<!--
-	Multiverse by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>VACAKETION</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping</title>
+    <meta name="description" content="Shopping - A-Frame">
+    <script src="dist/aframe.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="why-male-models" src="models/Cake2.dae"></a-asset-item>
+        <img id="fall" src="fall.png">
+        <img id="goggles" src="goggles.png">
+        <img id="mozvr" src="assets/img/mozvr.png">
+        <img id="price" src="price.png">
+        <img id="shadow2" src="assets/img/radial-shadow-2.png">
+        <img id="shoes" src="shoes.png">
+      </a-assets>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <a-entity id="model" position="0 0 -3">
+        <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="indefinite"></a-animation>
+        <a-collada-model position="0 -1 0" rotation="0 -20 0" scale="5 5 5"
+                         src="#why-male-models"></a-collada-model>
+      <!--  <a-image src="#shadow2" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image> -->
+      </a-entity>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html"><strong>VACAKETION</strong></a></h1>
-						<nav>
-							<ul>
-								<!-- <li><a href="#footer" class="icon fa-info-circle">About</a></li>-->
-							</ul>
-						</nav>
-					</header>
+      <a-curvedimage id="mozvr-logo" src="#mozvr" radius="5.7" theta-length="36" height="1"
+                     position="0 2.6 -1" opacity="0.5">
+        <a-animation attribute="rotation" from="0 10 0" to="0 200 0" delay="500"
+                     dur="1000"></a-animation>
+      </a-curvedimage>
 
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Vacation</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
-							<h2>Cake</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<h2>Tempus aliquam veroeros</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Aliquam ipsum sed dolore</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
-							<h2>Cursis aliquam nisl</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Sed consequat phasellus</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Mauris id tellus arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Nunc vehicula id nulla</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Neque et faucibus viverra</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Mattis ante fermentum</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Sed ac elementum arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Vehicula id nulla dignissim</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-					</div>
+    <!--  <a-image id="price" src="#price" width="7" height="3.5" scale="0.2 0.2 0.2">
+        <a-animation attribute="position" from="0 0 0" to="0 0 0" delay="1000"
+                     dur="1000"></a-animation>
+      </a-image>
+    -->
 
-				<!-- Footer -->
-					<footer id="footer" class="panel">
-						<div class="inner split">
-							<div>
-								<section>
-									<h2>Magna feugiat sed adipiscing</h2>
-									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
-								</section>
-								<section>
-									<h2>Follow me on ...</h2>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									</ul>
-								</section>
-								<p class="copyright">
-									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
-								</p>
-							</div>
-							<div>
-								<section>
-									<h2>Get in touch</h2>
-									<form method="post" action="#">
-										<div class="field half first">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="text" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-							</div>
-						</div>
-					</footer>
+      <a-curvedimage id="price" src="#price" radius="5.7"
+                     theta-length="50" height="4.5" position="0 0.45 -0.1" scale=".6 .6 .6">
+        <a-animation attribute="rotation" from="0 160 0" to="0 160 0" delay="750"
+                     dur="1000"></a-animation>
+      </a-curvedimage>
 
-			</div>
+      <a-cylinder id="goggles" color="#101010" height="0.02" radius="0.8">
+        <a-animation attribute="rotation" from="-270 0 0" to="-90 0 0" dur="750" delay="1000"
+                     fill="both"></a-animation>
+        <a-animation attribute="position" from="8 0 -9" to="8 3.5 -9" dur="750" delay="1000"
+                     fill="both"></a-animation>
+        <a-image src="#goggles" width="2" height="1" rotation="90 0 0" position="0 -.05 0"
+                 scale=".4 .4 .4"></a-image>
+      </a-cylinder>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+      <a-curvedimage id="stereoscopic-fall-collection-text" src="#fall" radius="5.7"
+                     theta-length="18" height=".45" position="0 0.9 0" scale=".4 .4 .4">
+        <a-animation attribute="rotation" from="0 180 0" to="0 210 0" delay="750"
+                     dur="1000"></a-animation>
+      </a-curvedimage>
 
-	</body>
+      <a-curvedimage id="shoes" src="#shoes" radius="5.7" theta-length="18" height="4"
+                     position="0 0.9 0" scale=".4 .4 .4">
+        <a-animation attribute="rotation" from="0 180 0" to="0 130 0" delay="750"
+                     dur="1000"></a-animation>
+      </a-curvedimage>
+
+      <a-curvedimage id="shoes" src="#shoes" radius="5.7" theta-length="18" height="4"
+                     position="0 0.9 0" scale=".4 .4 .4">
+        <a-animation attribute="rotation" from="0 130 0" to="0 230 0" delay="750"
+                     dur="1000"></a-animation>
+      </a-curvedimage>
+
+      <a-entity>
+        <a-cylinder position="0 0.5 0" radius="4" height="1.6" side="back" open-ended="true"
+                    color="#FFF"></a-cylinder>
+      </a-entity>
+
+      <a-sky color="#ECECEC"></a-sky>
+      <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
+      <a-light type="ambient" color="#fff"></a-light>
+    </a-scene>
+  </body>
 </html>
